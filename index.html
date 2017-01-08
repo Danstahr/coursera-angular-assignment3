@@ -17,6 +17,7 @@
         <button class="btn btn-primary" ng-click="ctrl.searchMenu()">Narrow It Down For Me!</button>
       </div>
     </div>
+    <div class="error" ng-if="ctrl.nothingFound">Nothing Found!</div>
     <found-items found-items="ctrl.found" on-remove="ctrl.removeItem(index)"></found-items>
   </div>
 
